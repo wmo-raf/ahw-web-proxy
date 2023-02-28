@@ -11,6 +11,7 @@ services:
       - ./nginx/nginx.conf/:/etc/nginx/nginx.conf:ro
       - ./nginx/conf.d/:/etc/nginx/conf.d/
       - ${STATIC_DATA_VOLUME}:/static-data
+      - ${GSKY_DATA_VOLUME}:/gskydata
 networks:
     default:
       name:  ${AHW_DOCKER_NETWORK}
