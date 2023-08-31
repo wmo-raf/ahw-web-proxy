@@ -12,8 +12,8 @@ services:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
       - ${STATIC_DATA_VOLUME}:/static-data
       - ${GSKY_DATA_VOLUME}:/gskydata
-      - ${HW_NEXT_STATIC_VOLUME}:/hw/static
-      - ${CMS_MAPVIEWER_NEXT_STATIC_VOLUME}:/cms-mapviewer/static
+      - ${HW_NEXT_STATIC_VOLUME}:/hw-static
+      - ${CMS_MAPVIEWER_NEXT_STATIC_VOLUME}:/mapviewer-static
 networks:
     default:
       name:  ${AHW_DOCKER_NETWORK}
