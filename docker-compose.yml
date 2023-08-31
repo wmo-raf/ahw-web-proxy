@@ -12,7 +12,7 @@ services:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
       - ${STATIC_DATA_VOLUME}:/static-data
       - ${GSKY_DATA_VOLUME}:/gskydata
-      - ${HW_NEXT_STATIC_VOLUME}:/hw-static
+      - ${HW_NEXT_STATIC_VOLUME}:/next/statichw-static
       - ${CMS_MAPVIEWER_NEXT_STATIC_VOLUME}:/mapviewer-static
 networks:
     default:
