@@ -14,6 +14,7 @@ services:
       - ${GSKY_DATA_VOLUME}:/gskydata
       - ${HW_NEXT_STATIC_VOLUME}:/hw-static/_next/static
       - ${CMS_MAPVIEWER_NEXT_STATIC_VOLUME}:/mapviewer-static/_next/static
+      - ${OPENMAPTILES_DATA_VOLUME}:/openmaptiles
 networks:
     default:
       name:  ${AHW_DOCKER_NETWORK}
